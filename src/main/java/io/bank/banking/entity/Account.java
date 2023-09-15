@@ -13,17 +13,17 @@ import javax.persistence.Column;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    private long id;
 
     @Column(updatable = false)
-    String name;
+    private String name;
 
     @Column(updatable = false)
-    String pin;
+    private String pin;
 
     @Column(updatable = false, unique = true)
-    String number;
+    private String number;
 
     @Column
-    double balance;
+    private double balance;
 }
